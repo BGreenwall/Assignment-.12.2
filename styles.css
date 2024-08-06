@@ -1,0 +1,244 @@
+/* Below are all of the stylization for the pages and their text, size, color, etc. */
+
+
+/* Main pages and all pages settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fad1ca; /* Pink pale */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fad1ca;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5em;
+    color: #c27b7b; /* Change for color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c27b7b;
+    margin-top: 100px; /* Adjust this value to move the navbar down */
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    position: absolute;
+    right: 120px; /* Adjust this value to move the image to the left */
+    top: 10px;
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+
+main {
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    background-color: #f1e7c6;
+    padding: 20px;
+}
+
+.specials, .classic-items, .signature-items, .special-orders {
+    text-align: center;
+}
+
+.item, .special-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+
+/* ***************************************************** */
+
+
+/* Classic page settings */
+.classic-items {
+    padding: 20px;
+    text-align: center;
+}
+
+.classic-items h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    text-align: center; /* Center the title on the page */
+    margin-bottom: 40px; /* Space between the title and the items */
+}
+
+.item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fffaf0; /* Optional: light background for the dessert boxes */
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+
+.item h3 {
+    position: absolute;
+    top: 10px; /* Position the title at the top of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive; /* Use a cute font here */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #c27b7b; /* Color for the dessert titles */
+    margin: 0;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 2.3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: right; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.item img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    
+    margin-left: 20px; /* Add space between image and text */
+}
+
+/* ***************************************************** */
+/* Specials page settings */
+.specials {
+    padding: 20px;
+    text-align: center;
+}
+
+.special-item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.special-item h3 {
+    margin: 0 0 10px;
+}
+
+.special-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.special-item p {
+    margin: 0;
+}
+
+/* ***************************************************** */
+/* Signatures page settings */
+.signature-items {
+    padding: 20px;
+    text-align: center;
+}
+
+.signature-items h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    text-align: center; /* Center the title on the page */
+    margin-bottom: 40px; /* Space between the title and the items */
+}
+
+.signature-item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fffaf0; /* Optional: light background for the dessert boxes */
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+.signature-item h3 {
+    position: absolute;
+    top: 10px; /* Position the title at the top of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive; /* Use a cute font here */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #c27b7b; /* Color for the dessert titles */
+    margin: 0;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.signature-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.signature-item p {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 2.3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: left; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+
+.signature-item img {
+    max-width: 40%; /* Adjust the image size */
+    height: auto;
+    display: block;    
+    margin-left: 20px; /* Add space between image and text */
+    width: 40%;
+}
+/* ***************************************************** */
